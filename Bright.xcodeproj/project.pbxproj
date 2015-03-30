@@ -393,6 +393,7 @@
 				0338A1581AC90F62007421E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0338A1591AC90F62007421E6 /* Build configuration list for PBXNativeTarget "BrightTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +402,7 @@
 				0338A15B1AC90F62007421E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
