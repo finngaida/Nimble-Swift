@@ -7,44 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		036AF3821AC79D05007DE87B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036AF3811AC79D05007DE87B /* AppDelegate.swift */; };
-		036AF3841AC79D05007DE87B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036AF3831AC79D05007DE87B /* ViewController.swift */; };
-		036AF3861AC79D05007DE87B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036AF3851AC79D05007DE87B /* Images.xcassets */; };
-		036AF3891AC79D05007DE87B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036AF3871AC79D05007DE87B /* Main.storyboard */; };
-		036AF3951AC79D05007DE87B /* BrightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036AF3941AC79D05007DE87B /* BrightTests.swift */; };
+		0338A1421AC90F62007421E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0338A1411AC90F62007421E6 /* AppDelegate.swift */; };
+		0338A1441AC90F62007421E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0338A1431AC90F62007421E6 /* Images.xcassets */; };
+		0338A1471AC90F62007421E6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0338A1451AC90F62007421E6 /* MainMenu.xib */; };
+		0338A1531AC90F62007421E6 /* BrightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0338A1521AC90F62007421E6 /* BrightTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		036AF38F1AC79D05007DE87B /* PBXContainerItemProxy */ = {
+		0338A14D1AC90F62007421E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 036AF3741AC79D04007DE87B /* Project object */;
+			containerPortal = 0338A1341AC90F62007421E6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 036AF37B1AC79D04007DE87B;
+			remoteGlobalIDString = 0338A13B1AC90F62007421E6;
 			remoteInfo = Bright;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		036AF37C1AC79D05007DE87B /* Bright.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bright.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		036AF3801AC79D05007DE87B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		036AF3811AC79D05007DE87B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		036AF3831AC79D05007DE87B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		036AF3851AC79D05007DE87B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		036AF3881AC79D05007DE87B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		036AF38E1AC79D05007DE87B /* BrightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		036AF3931AC79D05007DE87B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		036AF3941AC79D05007DE87B /* BrightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightTests.swift; sourceTree = "<group>"; };
+		0338A13C1AC90F62007421E6 /* Bright.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bright.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0338A1401AC90F62007421E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0338A1411AC90F62007421E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0338A1431AC90F62007421E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0338A1461AC90F62007421E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0338A14C1AC90F62007421E6 /* BrightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0338A1511AC90F62007421E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0338A1521AC90F62007421E6 /* BrightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		036AF3791AC79D04007DE87B /* Frameworks */ = {
+		0338A1391AC90F62007421E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		036AF38B1AC79D05007DE87B /* Frameworks */ = {
+		0338A1491AC90F62007421E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,57 +52,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		036AF3731AC79D04007DE87B = {
+		0338A1331AC90F62007421E6 = {
 			isa = PBXGroup;
 			children = (
-				036AF37E1AC79D05007DE87B /* Bright */,
-				036AF3911AC79D05007DE87B /* BrightTests */,
-				036AF37D1AC79D05007DE87B /* Products */,
+				0338A13E1AC90F62007421E6 /* Bright */,
+				0338A14F1AC90F62007421E6 /* BrightTests */,
+				0338A13D1AC90F62007421E6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		036AF37D1AC79D05007DE87B /* Products */ = {
+		0338A13D1AC90F62007421E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				036AF37C1AC79D05007DE87B /* Bright.app */,
-				036AF38E1AC79D05007DE87B /* BrightTests.xctest */,
+				0338A13C1AC90F62007421E6 /* Bright.app */,
+				0338A14C1AC90F62007421E6 /* BrightTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		036AF37E1AC79D05007DE87B /* Bright */ = {
+		0338A13E1AC90F62007421E6 /* Bright */ = {
 			isa = PBXGroup;
 			children = (
-				036AF3811AC79D05007DE87B /* AppDelegate.swift */,
-				036AF3831AC79D05007DE87B /* ViewController.swift */,
-				036AF3851AC79D05007DE87B /* Images.xcassets */,
-				036AF3871AC79D05007DE87B /* Main.storyboard */,
-				036AF37F1AC79D05007DE87B /* Supporting Files */,
+				0338A1411AC90F62007421E6 /* AppDelegate.swift */,
+				0338A1431AC90F62007421E6 /* Images.xcassets */,
+				0338A1451AC90F62007421E6 /* MainMenu.xib */,
+				0338A13F1AC90F62007421E6 /* Supporting Files */,
 			);
 			path = Bright;
 			sourceTree = "<group>";
 		};
-		036AF37F1AC79D05007DE87B /* Supporting Files */ = {
+		0338A13F1AC90F62007421E6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				036AF3801AC79D05007DE87B /* Info.plist */,
+				0338A1401AC90F62007421E6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		036AF3911AC79D05007DE87B /* BrightTests */ = {
+		0338A14F1AC90F62007421E6 /* BrightTests */ = {
 			isa = PBXGroup;
 			children = (
-				036AF3941AC79D05007DE87B /* BrightTests.swift */,
-				036AF3921AC79D05007DE87B /* Supporting Files */,
+				0338A1521AC90F62007421E6 /* BrightTests.swift */,
+				0338A1501AC90F62007421E6 /* Supporting Files */,
 			);
 			path = BrightTests;
 			sourceTree = "<group>";
 		};
-		036AF3921AC79D05007DE87B /* Supporting Files */ = {
+		0338A1501AC90F62007421E6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				036AF3931AC79D05007DE87B /* Info.plist */,
+				0338A1511AC90F62007421E6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -112,13 +109,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		036AF37B1AC79D04007DE87B /* Bright */ = {
+		0338A13B1AC90F62007421E6 /* Bright */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 036AF3981AC79D05007DE87B /* Build configuration list for PBXNativeTarget "Bright" */;
+			buildConfigurationList = 0338A1561AC90F62007421E6 /* Build configuration list for PBXNativeTarget "Bright" */;
 			buildPhases = (
-				036AF3781AC79D04007DE87B /* Sources */,
-				036AF3791AC79D04007DE87B /* Frameworks */,
-				036AF37A1AC79D04007DE87B /* Resources */,
+				0338A1381AC90F62007421E6 /* Sources */,
+				0338A1391AC90F62007421E6 /* Frameworks */,
+				0338A13A1AC90F62007421E6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -126,46 +123,46 @@
 			);
 			name = Bright;
 			productName = Bright;
-			productReference = 036AF37C1AC79D05007DE87B /* Bright.app */;
+			productReference = 0338A13C1AC90F62007421E6 /* Bright.app */;
 			productType = "com.apple.product-type.application";
 		};
-		036AF38D1AC79D05007DE87B /* BrightTests */ = {
+		0338A14B1AC90F62007421E6 /* BrightTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 036AF39B1AC79D05007DE87B /* Build configuration list for PBXNativeTarget "BrightTests" */;
+			buildConfigurationList = 0338A1591AC90F62007421E6 /* Build configuration list for PBXNativeTarget "BrightTests" */;
 			buildPhases = (
-				036AF38A1AC79D05007DE87B /* Sources */,
-				036AF38B1AC79D05007DE87B /* Frameworks */,
-				036AF38C1AC79D05007DE87B /* Resources */,
+				0338A1481AC90F62007421E6 /* Sources */,
+				0338A1491AC90F62007421E6 /* Frameworks */,
+				0338A14A1AC90F62007421E6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				036AF3901AC79D05007DE87B /* PBXTargetDependency */,
+				0338A14E1AC90F62007421E6 /* PBXTargetDependency */,
 			);
 			name = BrightTests;
 			productName = BrightTests;
-			productReference = 036AF38E1AC79D05007DE87B /* BrightTests.xctest */;
+			productReference = 0338A14C1AC90F62007421E6 /* BrightTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		036AF3741AC79D04007DE87B /* Project object */ = {
+		0338A1341AC90F62007421E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Intui, Inc.";
 				TargetAttributes = {
-					036AF37B1AC79D04007DE87B = {
+					0338A13B1AC90F62007421E6 = {
 						CreatedOnToolsVersion = 6.2;
 					};
-					036AF38D1AC79D05007DE87B = {
+					0338A14B1AC90F62007421E6 = {
 						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 036AF37B1AC79D04007DE87B;
+						TestTargetID = 0338A13B1AC90F62007421E6;
 					};
 				};
 			};
-			buildConfigurationList = 036AF3771AC79D04007DE87B /* Build configuration list for PBXProject "Bright" */;
+			buildConfigurationList = 0338A1371AC90F62007421E6 /* Build configuration list for PBXProject "Bright" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -173,28 +170,28 @@
 				en,
 				Base,
 			);
-			mainGroup = 036AF3731AC79D04007DE87B;
-			productRefGroup = 036AF37D1AC79D05007DE87B /* Products */;
+			mainGroup = 0338A1331AC90F62007421E6;
+			productRefGroup = 0338A13D1AC90F62007421E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				036AF37B1AC79D04007DE87B /* Bright */,
-				036AF38D1AC79D05007DE87B /* BrightTests */,
+				0338A13B1AC90F62007421E6 /* Bright */,
+				0338A14B1AC90F62007421E6 /* BrightTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		036AF37A1AC79D04007DE87B /* Resources */ = {
+		0338A13A1AC90F62007421E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				036AF3861AC79D05007DE87B /* Images.xcassets in Resources */,
-				036AF3891AC79D05007DE87B /* Main.storyboard in Resources */,
+				0338A1441AC90F62007421E6 /* Images.xcassets in Resources */,
+				0338A1471AC90F62007421E6 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		036AF38C1AC79D05007DE87B /* Resources */ = {
+		0338A14A1AC90F62007421E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -204,46 +201,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		036AF3781AC79D04007DE87B /* Sources */ = {
+		0338A1381AC90F62007421E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				036AF3841AC79D05007DE87B /* ViewController.swift in Sources */,
-				036AF3821AC79D05007DE87B /* AppDelegate.swift in Sources */,
+				0338A1421AC90F62007421E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		036AF38A1AC79D05007DE87B /* Sources */ = {
+		0338A1481AC90F62007421E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				036AF3951AC79D05007DE87B /* BrightTests.swift in Sources */,
+				0338A1531AC90F62007421E6 /* BrightTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		036AF3901AC79D05007DE87B /* PBXTargetDependency */ = {
+		0338A14E1AC90F62007421E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 036AF37B1AC79D04007DE87B /* Bright */;
-			targetProxy = 036AF38F1AC79D05007DE87B /* PBXContainerItemProxy */;
+			target = 0338A13B1AC90F62007421E6 /* Bright */;
+			targetProxy = 0338A14D1AC90F62007421E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		036AF3871AC79D05007DE87B /* Main.storyboard */ = {
+		0338A1451AC90F62007421E6 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				036AF3881AC79D05007DE87B /* Base */,
+				0338A1461AC90F62007421E6 /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		036AF3961AC79D05007DE87B /* Debug */ = {
+		0338A1541AC90F62007421E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -285,7 +281,7 @@
 			};
 			name = Debug;
 		};
-		036AF3971AC79D05007DE87B /* Release */ = {
+		0338A1551AC90F62007421E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -320,7 +316,7 @@
 			};
 			name = Release;
 		};
-		036AF3991AC79D05007DE87B /* Debug */ = {
+		0338A1571AC90F62007421E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -331,7 +327,7 @@
 			};
 			name = Debug;
 		};
-		036AF39A1AC79D05007DE87B /* Release */ = {
+		0338A1581AC90F62007421E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -342,7 +338,7 @@
 			};
 			name = Release;
 		};
-		036AF39C1AC79D05007DE87B /* Debug */ = {
+		0338A15A1AC90F62007421E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -362,7 +358,7 @@
 			};
 			name = Debug;
 		};
-		036AF39D1AC79D05007DE87B /* Release */ = {
+		0338A15B1AC90F62007421E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -381,32 +377,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		036AF3771AC79D04007DE87B /* Build configuration list for PBXProject "Bright" */ = {
+		0338A1371AC90F62007421E6 /* Build configuration list for PBXProject "Bright" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				036AF3961AC79D05007DE87B /* Debug */,
-				036AF3971AC79D05007DE87B /* Release */,
+				0338A1541AC90F62007421E6 /* Debug */,
+				0338A1551AC90F62007421E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		036AF3981AC79D05007DE87B /* Build configuration list for PBXNativeTarget "Bright" */ = {
+		0338A1561AC90F62007421E6 /* Build configuration list for PBXNativeTarget "Bright" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				036AF3991AC79D05007DE87B /* Debug */,
-				036AF39A1AC79D05007DE87B /* Release */,
+				0338A1571AC90F62007421E6 /* Debug */,
+				0338A1581AC90F62007421E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		036AF39B1AC79D05007DE87B /* Build configuration list for PBXNativeTarget "BrightTests" */ = {
+		0338A1591AC90F62007421E6 /* Build configuration list for PBXNativeTarget "BrightTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				036AF39C1AC79D05007DE87B /* Debug */,
-				036AF39D1AC79D05007DE87B /* Release */,
+				0338A15A1AC90F62007421E6 /* Debug */,
+				0338A15B1AC90F62007421E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 036AF3741AC79D04007DE87B /* Project object */;
+	rootObject = 0338A1341AC90F62007421E6 /* Project object */;
 }
