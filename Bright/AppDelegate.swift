@@ -25,7 +25,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @IBAction func queryClicked(sender: NSMenuItem) {
-        println("working up to now")
+        let url = NSURL(string: "https://bright-backend.herokuapp.com/input?i=define+smooth")
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+            println(NSString(data: data, encoding: NSUTF8StringEncoding))
+        }
+        
+        task.resume()
     }
 
 }
