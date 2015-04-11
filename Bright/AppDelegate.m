@@ -16,7 +16,10 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    [statusItem setTitle:@""];
+    [statusItem setImage:[NSImage imageNamed:@"statusIcon"]];
+    [statusItem setHighlightMode:YES];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

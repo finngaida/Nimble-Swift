@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <AppKit/AppKit.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
-
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+    NSStatusItem *statusItem;
+}
 
 @end
 

@@ -401,6 +401,7 @@
 				03A5BDF91AD8AE2B0046418B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03A5BDFA1AD8AE2B0046418B /* Build configuration list for PBXNativeTarget "BrightTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +410,7 @@
 				03A5BDFC1AD8AE2B0046418B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
