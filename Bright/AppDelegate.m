@@ -19,6 +19,7 @@
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setTitle:@""];
     [statusItem setImage:[NSImage imageNamed:@"statusIcon"]];
+    [statusItem setAlternateImage:[NSImage imageNamed:@"altStatusIcon"]];
     [statusItem setHighlightMode:YES];
     [statusItem setMenu: menu];
 }
