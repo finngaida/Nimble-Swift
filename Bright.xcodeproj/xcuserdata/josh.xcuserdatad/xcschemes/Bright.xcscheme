@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0620"
+   LastUpgradeVersion = "0630"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0338A13B1AC90F62007421E6"
+               BlueprintIdentifier = "03A5BDD91AD8AE2B0046418B"
                BuildableName = "Bright.app"
                BlueprintName = "Bright"
                ReferencedContainer = "container:Bright.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0338A14B1AC90F62007421E6"
+               BlueprintIdentifier = "03A5BDEC1AD8AE2B0046418B"
                BuildableName = "BrightTests.xctest"
                BlueprintName = "BrightTests"
                ReferencedContainer = "container:Bright.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0338A14B1AC90F62007421E6"
+               BlueprintIdentifier = "03A5BDEC1AD8AE2B0046418B"
                BuildableName = "BrightTests.xctest"
                BlueprintName = "BrightTests"
                ReferencedContainer = "container:Bright.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0338A13B1AC90F62007421E6"
+            BlueprintIdentifier = "03A5BDD91AD8AE2B0046418B"
             BuildableName = "Bright.app"
             BlueprintName = "Bright"
             ReferencedContainer = "container:Bright.xcodeproj">
@@ -76,7 +76,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0338A13B1AC90F62007421E6"
+            BlueprintIdentifier = "03A5BDD91AD8AE2B0046418B"
             BuildableName = "Bright.app"
             BlueprintName = "Bright"
             ReferencedContainer = "container:Bright.xcodeproj">
@@ -95,7 +95,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0338A13B1AC90F62007421E6"
+            BlueprintIdentifier = "03A5BDD91AD8AE2B0046418B"
             BuildableName = "Bright.app"
             BlueprintName = "Bright"
             ReferencedContainer = "container:Bright.xcodeproj">
