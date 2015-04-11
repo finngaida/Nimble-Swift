@@ -11,7 +11,11 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+            <connections>
+                <outlet property="menu" destination="XtZ-dK-8Ru" id="8H9-yb-AN6"/>
+            </connections>
+        </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
@@ -661,6 +665,17 @@
                     </menu>
                 </menuItem>
             </items>
+        </menu>
+        <menu id="XtZ-dK-8Ru">
+            <items>
+                <menuItem title="Query" id="WnL-Um-9yz">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="clickQuery:" target="Voe-Tx-rLC" id="Zc7-ga-lDZ"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="259" y="441.5"/>
         </menu>
     </objects>
 </document>

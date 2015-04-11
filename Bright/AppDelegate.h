@@ -13,5 +13,8 @@
     NSStatusItem *statusItem;
 }
 
-@end
+@property (weak) IBOutlet NSMenu *menu;
 
+- (IBAction)clickQuery:(id)sender;
+
+@end
