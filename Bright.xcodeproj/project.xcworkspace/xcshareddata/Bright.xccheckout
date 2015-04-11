@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>1DAABBE9-5420-4F6A-A4BD-2DE3108B50D7</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Bright</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>5800064D462BCAF1848F5FAEBC62CBC21D06FC55</key>
 		<string>https://github.com/intui/Bright</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Bright.xcodeproj</string>
+	<string>Bright.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>5800064D462BCAF1848F5FAEBC62CBC21D06FC55</key>

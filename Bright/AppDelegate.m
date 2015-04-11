@@ -20,6 +20,7 @@
     [statusItem setTitle:@""];
     [statusItem setImage:[NSImage imageNamed:@"statusIcon"]];
     [statusItem setHighlightMode:YES];
+    [statusItem setMenu: menu];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -27,6 +28,11 @@
 }
 
 - (IBAction)clickQuery:(id)sender {
-    NSLog(@"Test");
+    NSLog(@"Queried");
 }
+
+- (IBAction)quit:(id)sender {
+    [NSApp terminate: self];
+}
+
 @end

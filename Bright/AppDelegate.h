@@ -7,14 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <AppKit/AppKit.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
     NSStatusItem *statusItem;
+    IBOutlet NSMenu *menu;
 }
 
-@property (weak) IBOutlet NSMenu *menu;
-
 - (IBAction)clickQuery:(id)sender;
+- (IBAction)quit:(id)sender;
 
 @end

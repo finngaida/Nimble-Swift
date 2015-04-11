@@ -13,7 +13,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
-                <outlet property="menu" destination="XtZ-dK-8Ru" id="8H9-yb-AN6"/>
+                <outlet property="menu" destination="XtZ-dK-8Ru" id="JP0-CO-o9b"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -672,6 +672,12 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="clickQuery:" target="Voe-Tx-rLC" id="Zc7-ga-lDZ"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Quit" id="Mqc-hm-04P">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quit:" target="Voe-Tx-rLC" id="Ni1-6c-1D3"/>
                     </connections>
                 </menuItem>
             </items>
