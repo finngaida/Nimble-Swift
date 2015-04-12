@@ -29,7 +29,14 @@
 }
 
 - (IBAction)clickQuery:(id)sender {
-    NSLog(@"Queried");
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://bright-backend.herokuapp.com/input?i=define+smooth"]];
+    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSError *jsonParsingError = nil;
+    NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:response
+                                                            options:0 error:&jsonParsingError];
+    
+    NSLog(@"%@", jsonResponse);
 }
 
 - (IBAction)quit:(id)sender {
