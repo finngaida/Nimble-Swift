@@ -36,7 +36,10 @@
     NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:response
                                                             options:0 error:&jsonParsingError];
     
-    NSLog(@"%@", jsonResponse);
+    NSDictionary *result = [jsonResponse valueForKeyPath:@"result"];
+    NSDictionary *success = [result valueForKeyPath:@"success"];
+    
+    NSLog(@"Did things work? 0 means no, 1 means yes. Result: %@", success);
 }
 
 - (IBAction)quit:(id)sender {
