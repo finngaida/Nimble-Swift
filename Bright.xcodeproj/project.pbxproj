@@ -12,6 +12,7 @@
 		03A5BDE51AD8AE2B0046418B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A5BDE41AD8AE2B0046418B /* Images.xcassets */; };
 		03A5BDE81AD8AE2B0046418B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A5BDE61AD8AE2B0046418B /* MainMenu.xib */; };
 		03A5BDF41AD8AE2B0046418B /* BrightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A5BDF31AD8AE2B0046418B /* BrightTests.m */; };
+		03EBAFCB1AFEDD92008064FA /* MainQueryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EBAFCA1AFEDD92008064FA /* MainQueryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 		03A5BDED1AD8AE2B0046418B /* BrightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A5BDF21AD8AE2B0046418B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03A5BDF31AD8AE2B0046418B /* BrightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrightTests.m; sourceTree = "<group>"; };
+		03EBAFC91AFEDD92008064FA /* MainQueryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainQueryController.h; sourceTree = "<group>"; };
+		03EBAFCA1AFEDD92008064FA /* MainQueryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainQueryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 			children = (
 				03A5BDDF1AD8AE2B0046418B /* AppDelegate.h */,
 				03A5BDE01AD8AE2B0046418B /* AppDelegate.m */,
+				03EBAFC91AFEDD92008064FA /* MainQueryController.h */,
+				03EBAFCA1AFEDD92008064FA /* MainQueryController.m */,
 				03A5BDE41AD8AE2B0046418B /* Images.xcassets */,
 				03A5BDE61AD8AE2B0046418B /* MainMenu.xib */,
 				03A5BDDD1AD8AE2B0046418B /* Supporting Files */,
@@ -210,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03EBAFCB1AFEDD92008064FA /* MainQueryController.m in Sources */,
 				03A5BDE31AD8AE2B0046418B /* main.m in Sources */,
 				03A5BDE11AD8AE2B0046418B /* AppDelegate.m in Sources */,
 			);
