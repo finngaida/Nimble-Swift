@@ -11,7 +11,10 @@
 @interface MainQueryController : NSWindowController
 
 @property (weak, nonatomic) IBOutlet NSTextField *input;
-@property (weak) IBOutlet NSScrollView *outputTextView;
+@property (weak) IBOutlet NSTextField *outputTextView;
+@property (weak) IBOutlet NSButton *queryButton;
+
+@property (weak) IBOutlet NSWindow *queryWindow;
 
 - (IBAction)queryPress:(id)sender;
 

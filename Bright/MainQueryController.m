@@ -13,6 +13,8 @@
 
 - (void)awakeFromNib {
     _input.placeholderString = @"What is the volume of the Atlantic Ocean?"; // 3.104×10^8 km^3  (cubic kilometers)
+    [_queryButton setKeyEquivalent:@"\r"];
+    [[self queryWindow] setTitle:@"Query"];
 }
 
 - (IBAction)queryPress:(id)sender {
@@ -27,7 +29,7 @@
     
     NSDictionary *result  = [jsonResponse valueForKeyPath:@"result"];
     
-    NSLog(@"%@", result);
+    _outputTextView.stringValue = [NSString stringWithFormat:@"%@", result];
 }
 
 @end
