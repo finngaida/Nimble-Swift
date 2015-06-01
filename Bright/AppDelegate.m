@@ -16,6 +16,22 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    
+    #pragma GCC diagnostic ignored "-Wundeclared-selector"
+    
+    NSMenu *menu = [[NSMenu alloc] init];
+    
+    NSMenuItem *query = [[NSMenuItem alloc] initWithTitle:@"What's the Size of the Atlantic Ocean?" action:@selector(query) keyEquivalent:@""];
+    NSMenuItem *exit = [[NSMenuItem alloc] initWithTitle:@"Exit" action:@selector(exit) keyEquivalent:@""];
+    
+    NSTextField *textField = [[NSTextField alloc] initWithFrame:CGRectZero];
+    
+    query.view = textField;
+    
+    [menu addItem:query];
+    [menu addItem:[NSMenuItem separatorItem]];
+    [menu addItem:exit];
+    
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setTitle:@""];
     [statusItem setImage:[NSImage imageNamed:@"statusIcon"]];

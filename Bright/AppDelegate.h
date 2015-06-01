@@ -10,7 +10,6 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
     NSStatusItem *statusItem;
-    IBOutlet NSMenu *menu;
 }
 
 - (IBAction)clickQuery:(id)sender;
