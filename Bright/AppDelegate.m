@@ -15,6 +15,9 @@
 
 @implementation AppDelegate
 
+@synthesize window  = _window;
+@synthesize popover = _popover;
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
@@ -22,12 +25,13 @@
     [statusItem setImage:[NSImage imageNamed:@"statusIcon"]];
     [statusItem setAlternateImage:[NSImage imageNamed:@"altStatusIcon"]];
     [statusItem setHighlightMode:YES];
+    
+    [statusItem setTarget:self];
+    [statusItem setAction:@selector(showPopover:)];
 }
 
 - (IBAction)showPopover:(id)sender {
-    NSLog(@"how the fuck");
-    NSLog(@"How do I connect this to the status bar icon");
-    // I'm an idiot
+    [_popover showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxXEdge];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
