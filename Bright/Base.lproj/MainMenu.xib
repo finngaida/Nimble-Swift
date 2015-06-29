@@ -13,7 +13,10 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
+                <outlet property="input" destination="uwF-L0-I6P" id="f0p-hx-G42"/>
+                <outlet property="output" destination="ngd-g1-bB2" id="b4L-kO-KpG"/>
                 <outlet property="popover" destination="5ow-J4-0qt" id="Ch4-aO-7aL"/>
+                <outlet property="queryButton" destination="60X-e2-6pr" id="27c-o9-R3D"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -45,6 +48,9 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="tempMakeQuery:" target="Voe-Tx-rLC" id="L05-bW-u2L"/>
+                    </connections>
                 </button>
                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ngd-g1-bB2">
                     <rect key="frame" x="0.0" y="0.0" width="325" height="76"/>

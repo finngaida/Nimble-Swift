@@ -13,7 +13,11 @@
 }
 
 @property (weak) IBOutlet NSPopover *popover;
+@property (weak) IBOutlet NSButton *queryButton;
+@property (weak) IBOutlet NSTextField *input;
+@property (weak) IBOutlet NSTextField *output;
 
 - (IBAction)showPopover:(id)sender;
+- (IBAction)tempMakeQuery:(id)sender;
 
 @end

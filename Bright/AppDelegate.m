@@ -20,6 +20,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
+    [_queryButton setKeyEquivalent:@"\r"];
+    
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setTitle:@""];
     [statusItem setImage:[NSImage imageNamed:@"statusIcon"]];
@@ -32,6 +34,13 @@
 
 - (IBAction)showPopover:(id)sender {
     [_popover showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxXEdge];
+}
+
+- (IBAction)tempMakeQuery:(id)sender {
+    NSString *input = [_input stringValue];
+    NSString* urlString = [[NSString stringWithFormat:@"https://bright-backend.herokuapp.com/input?i=%@", input] stringByAddingPercentEscapesUsingEncoding : NSUTF8StringEncoding];
+    NSLog(@"%@", urlString);
+
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
