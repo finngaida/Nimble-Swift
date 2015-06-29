@@ -12,7 +12,8 @@
     NSStatusItem *statusItem;
 }
 
-- (IBAction)clickQuery:(id)sender;
-- (IBAction)quit:(id)sender;
+@property (weak) IBOutlet NSPopover *popover;
+
+- (IBAction)showPopover:(id)sender;
 
 @end
