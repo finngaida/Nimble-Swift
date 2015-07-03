@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AFNetworking.h"
 
 @interface AppDelegate ()
 
@@ -38,9 +39,16 @@
 
 - (IBAction)tempMakeQuery:(id)sender {
     NSString *input = [_input stringValue];
-    NSString* urlString = [[NSString stringWithFormat:@"https://bright-backend.herokuapp.com/input?i=%@", input] stringByAddingPercentEscapesUsingEncoding : NSUTF8StringEncoding];
-    NSLog(@"%@", urlString);
-
+    NSString *escapedInput = [input stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+    NSDictionary *params = @{@"i": escapedInput};
+    
+    /* Make request and return response */
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:@"https://bright-backend.herokuapp.com/input" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        _output.stringValue = responseObject;
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        _output.stringValue = [NSString stringWithFormat:@"Uh oh! There was problem with %@", input];
+    }];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
