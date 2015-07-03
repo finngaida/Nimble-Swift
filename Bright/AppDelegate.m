@@ -45,7 +45,11 @@
     /* Make request and return response */
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:@"https://bright-backend.herokuapp.com/input" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        _output.stringValue = responseObject;
+        if ([responseObject[@"result"][@"success"]  isEqual: @1]) {
+        _output.stringValue = responseObject[@"result"][@"result"][@"plaintext"];
+        } else {
+            _output.stringValue = @"Check your input, it doesn't seem valid.";
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         _output.stringValue = [NSString stringWithFormat:@"Uh oh! There was problem with %@", input];
     }];

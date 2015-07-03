@@ -4,12 +4,12 @@ A Wolfram|Alpha OS X toolbar app.
 ## Checklist
 
 ### ASAP
-- [ ] Add exit button
-- [ ] Fix icon resolutions
+- [x] Add exit button
 
 ### Later
-- [ ] Format Response
+- [x] Format Response
 - [ ] Fix NSPopover's "triangle"
+- [ ] Fix icon resolutions
 
 ### Eventually
 - [ ] Adjust the popover's size dependent on the amount of input given/size input takes up
