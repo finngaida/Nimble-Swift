@@ -31,7 +31,7 @@
             </connections>
         </popover>
         <customView id="hbh-B9-bHK">
-            <rect key="frame" x="0.0" y="-1" width="355" height="188"/>
+            <rect key="frame" x="0.0" y="0.0" width="355" height="245"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uwF-L0-I6P">
@@ -70,8 +70,16 @@
                         <action selector="terminate:" target="-1" id="ZbO-ES-6IL"/>
                     </connections>
                 </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fin-Dq-Jx9">
+                    <rect key="frame" x="148" y="201" width="59" height="29"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Bright" id="qXv-dZ-wZO">
+                        <font key="font" size="24" name="HelveticaNeue-UltraLight"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
-            <point key="canvasLocation" x="362.5" y="271"/>
+            <point key="canvasLocation" x="362.5" y="242.5"/>
         </customView>
     </objects>
 </document>
