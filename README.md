@@ -20,3 +20,4 @@ A Wolfram|Alpha OS X toolbar app.
 - [ ] Make UI look like Adam's perfect mockups (gonna be the hardest one)
 - [ ] Improve error messages (and error handling)
 - [ ] (For the API as well) Better handling different types of info (math, history, science, etc)
+- [ ] Better improve response formatting
