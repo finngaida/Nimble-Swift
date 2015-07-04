@@ -4,7 +4,7 @@ A Wolfram|Alpha OS X toolbar app.
 ## Checklist
 
 ### ASAP
-- [x] Add exit button
+- [ ] Add exit button
 
 ### Later
 - [x] Format Response
