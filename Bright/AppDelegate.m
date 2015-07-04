@@ -32,7 +32,22 @@
 }
 
 - (IBAction)showPopover:(id)sender {
-    [_popover showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxXEdge];
+    if ([NSEvent modifierFlags] & NSAlternateKeyMask) {
+        NSLog(@"Option button held");
+        NSMenu *menu = [[NSMenu alloc] initWithTitle:@"Bright"];
+        NSMenuItem *prefs = [[NSMenuItem alloc] initWithTitle:@"Preferences" action:NULL keyEquivalent:@""];
+        NSMenuItem *quit  = [[NSMenuItem alloc] initWithTitle:@"Quit" action:NULL keyEquivalent:@""];
+        
+        [menu addItem:prefs];
+        [menu addItem:quit];
+        
+        // Show NSMenu
+//        [NSMenu popUpContextMenu:menu withEvent:showPopover forView:self];
+        // fuck programming
+        // i never asked for this
+    } else {
+        [_popover showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxXEdge];
+    }
 }
 
 - (IBAction)tempMakeQuery:(id)sender {
