@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Bright/AppDelegate.m"
-            timestampString = "457586767.936679"
+            timestampString = "457674591.795598"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "-tempMakeQuery:"
             landmarkType = "5">
          </BreakpointContent>

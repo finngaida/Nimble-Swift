@@ -21,8 +21,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
-    [_queryButton setKeyEquivalent:@"\r"];
-    
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setTitle:@""];
     [statusItem setImage:[NSImage imageNamed:@"statusIcon"]];
@@ -45,11 +43,17 @@
     /* Make request and return response */
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:@"https://bright-backend.herokuapp.com/input" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
         if ([responseObject[@"result"][@"success"]  isEqual: @1]) {
-        _output.stringValue = responseObject[@"result"][@"result"][@"plaintext"];
+            /* Input returned success */
+            NSString *implyingString = [NSString stringWithFormat:@"implying you meant %@", responseObject[@"result"][@"input"]];
+            _implying.stringValue = implyingString;
+            _output.stringValue = responseObject[@"result"][@"result"][@"plaintext"];
         } else {
+            /* Input returned failure */
             _output.stringValue = @"Check your input, it doesn't seem valid.";
         }
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         _output.stringValue = [NSString stringWithFormat:@"Uh oh! There was problem with %@", input];
     }];
@@ -57,10 +61,6 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
-}
-
-- (IBAction)clickQuery:(id)sender {
-    // open query window (for now)
 }
 
 - (IBAction)quit:(id)sender {

@@ -13,10 +13,10 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
-                <outlet property="input" destination="uwF-L0-I6P" id="f0p-hx-G42"/>
-                <outlet property="output" destination="ngd-g1-bB2" id="b4L-kO-KpG"/>
+                <outlet property="implying" destination="mNm-1b-5s4" id="yaf-vT-3oH"/>
+                <outlet property="input" destination="ob2-aW-ITK" id="yru-aK-wrm"/>
+                <outlet property="output" destination="sAI-Se-YD9" id="7eG-7M-RDf"/>
                 <outlet property="popover" destination="5ow-J4-0qt" id="Ch4-aO-7aL"/>
-                <outlet property="queryButton" destination="60X-e2-6pr" id="27c-o9-R3D"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -31,55 +31,38 @@
             </connections>
         </popover>
         <customView id="hbh-B9-bHK">
-            <rect key="frame" x="0.0" y="0.0" width="355" height="245"/>
+            <rect key="frame" x="0.0" y="5" width="355" height="184"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uwF-L0-I6P">
-                    <rect key="frame" x="0.0" y="151" width="355" height="37"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" placeholderString="what's the volume of the atlantic ocean" drawsBackground="YES" id="Cud-cm-YHo">
+                <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ob2-aW-ITK">
+                    <rect key="frame" x="0.0" y="162" width="355" height="22"/>
+                    <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="volume of atlantic ocean" usesSingleLineMode="YES" bezelStyle="round" id="y2D-ha-Wod">
                         <font key="font" metaFont="system"/>
-                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </searchFieldCell>
+                    <connections>
+                        <action selector="tempMakeQuery:" target="Voe-Tx-rLC" id="Squ-Ni-SaG"/>
+                    </connections>
+                </searchField>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mNm-1b-5s4">
+                    <rect key="frame" x="0.0" y="132" width="355" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" title="  implying you meant &quot;total water in the Atlantic Ocean&quot;" placeholderString="" drawsBackground="YES" id="Mbs-bd-Gnv">
+                        <font key="font" size="13" name="HelveticaNeue-Italic"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.52283881642064567" blue="0.040956255919148865" alpha="1" colorSpace="calibratedRGB"/>
                     </textFieldCell>
                 </textField>
-                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ngd-g1-bB2">
-                    <rect key="frame" x="0.0" y="38" width="355" height="76"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="H8y-ut-SDl">
-                        <font key="font" metaFont="system"/>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sAI-Se-YD9">
+                    <rect key="frame" x="0.0" y="0.0" width="355" height="112"/>
+                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="FJ4-GN-vzc">
+                        <font key="font" size="18" name="HelveticaNeue"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60X-e2-6pr">
-                    <rect key="frame" x="81" y="115" width="193" height="32"/>
-                    <buttonCell key="cell" type="push" title="Temporary Query Search" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SSO-hq-7Ta">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                    <connections>
-                        <action selector="tempMakeQuery:" target="Voe-Tx-rLC" id="L05-bW-u2L"/>
-                    </connections>
-                </button>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pK0-se-vdv">
-                    <rect key="frame" x="142" y="2" width="66" height="32"/>
-                    <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ne0-Qi-lYc">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                    <connections>
-                        <action selector="terminate:" target="-1" id="ZbO-ES-6IL"/>
-                    </connections>
-                </button>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fin-Dq-Jx9">
-                    <rect key="frame" x="148" y="201" width="59" height="29"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Bright" id="qXv-dZ-wZO">
-                        <font key="font" size="24" name="HelveticaNeue-UltraLight"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
             </subviews>
-            <point key="canvasLocation" x="362.5" y="242.5"/>
+            <point key="canvasLocation" x="537.5" y="297"/>
         </customView>
     </objects>
 </document>
