@@ -33,7 +33,6 @@
 
 - (IBAction)showPopover:(id)sender {
     if ([NSEvent modifierFlags] & NSAlternateKeyMask) {
-        NSLog(@"Option button held");
         NSMenu *menu = [[NSMenu alloc] initWithTitle:@"Bright"];
         NSMenuItem *prefs = [[NSMenuItem alloc] initWithTitle:@"Preferences" action:NULL keyEquivalent:@""];
         NSMenuItem *quit  = [[NSMenuItem alloc] initWithTitle:@"Quit" action:NULL keyEquivalent:@""];
@@ -45,12 +44,16 @@
 //        [NSMenu popUpContextMenu:menu withEvent:showPopover forView:self];
         // fuck programming
         // i never asked for this
+        
+        // for now it just quits the app
+        [NSApp terminate: self];
+        
     } else {
         [_popover showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxXEdge];
     }
 }
 
-- (IBAction)tempMakeQuery:(id)sender {
+- (IBAction)query:(id)sender {
     NSString *input = [_input stringValue];
     NSString *escapedInput = [input stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
     NSDictionary *params = @{@"i": escapedInput};
@@ -60,26 +63,27 @@
     [manager GET:@"https://bright-backend.herokuapp.com/input" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         if ([responseObject[@"result"][@"success"]  isEqual: @1]) {
+            
             /* Input returned success */
             NSString *implyingString = [NSString stringWithFormat:@"implying you meant %@", responseObject[@"result"][@"input"]];
             _implying.stringValue = implyingString;
             _output.stringValue = responseObject[@"result"][@"result"][@"plaintext"];
+            
+            
         } else {
             /* Input returned failure */
+            [_output setTextColor:[NSColor orangeColor]];
             _output.stringValue = @"Check your input, it doesn't seem valid.";
         }
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [_output setTextColor:[NSColor redColor]];
         _output.stringValue = [NSString stringWithFormat:@"Uh oh! There was problem with %@", input];
     }];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
-}
-
-- (IBAction)quit:(id)sender {
-    [NSApp terminate: self];
 }
 
 @end

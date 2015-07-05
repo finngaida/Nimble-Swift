@@ -41,9 +41,6 @@
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </searchFieldCell>
-                    <connections>
-                        <action selector="tempMakeQuery:" target="Voe-Tx-rLC" id="Squ-Ni-SaG"/>
-                    </connections>
                 </searchField>
                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mNm-1b-5s4">
                     <rect key="frame" x="0.0" y="132" width="355" height="22"/>
@@ -55,12 +52,23 @@
                 </textField>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sAI-Se-YD9">
                     <rect key="frame" x="0.0" y="0.0" width="355" height="112"/>
-                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="FJ4-GN-vzc">
-                        <font key="font" size="18" name="HelveticaNeue"/>
+                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" title="this is a big return of text" placeholderString="" drawsBackground="YES" id="FJ4-GN-vzc">
+                        <font key="font" size="32" name="HelveticaNeue"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y10-mb-RRb">
+                    <rect key="frame" x="0.0" y="162" width="355" height="22"/>
+                    <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" placeholderString="volume of atlantic ocean" drawsBackground="YES" usesSingleLineMode="YES" id="BGS-yV-cii">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </searchFieldCell>
+                    <connections>
+                        <action selector="query:" target="Voe-Tx-rLC" id="1P5-XI-izf"/>
+                    </connections>
+                </searchField>
             </subviews>
             <point key="canvasLocation" x="537.5" y="297"/>
         </customView>

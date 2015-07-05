@@ -18,6 +18,6 @@
 @property (weak) IBOutlet NSTextField *implying;
 
 - (IBAction)showPopover:(id)sender;
-- (IBAction)tempMakeQuery:(id)sender;
+- (IBAction)query:(id)sender;
 
 @end
