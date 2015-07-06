@@ -59,7 +59,7 @@
                     </textFieldCell>
                 </textField>
                 <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y10-mb-RRb">
-                    <rect key="frame" x="0.0" y="162" width="355" height="22"/>
+                    <rect key="frame" x="0.0" y="162" width="355" height="17"/>
                     <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" placeholderString="volume of atlantic ocean" drawsBackground="YES" usesSingleLineMode="YES" id="BGS-yV-cii">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>

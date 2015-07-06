@@ -50,6 +50,7 @@
         
     } else {
         [_popover showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxXEdge];
+//        _output.stringValue = @"this is a big return of text"; // for testing
     }
 }
 
