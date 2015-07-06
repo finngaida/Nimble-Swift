@@ -52,7 +52,7 @@
                 </textField>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sAI-Se-YD9">
                     <rect key="frame" x="0.0" y="0.0" width="355" height="112"/>
-                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" title="this is a big return of text" placeholderString="" drawsBackground="YES" id="FJ4-GN-vzc">
+                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" placeholderString="" drawsBackground="YES" id="FJ4-GN-vzc">
                         <font key="font" size="32" name="HelveticaNeue"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
