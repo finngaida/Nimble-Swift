@@ -34,6 +34,7 @@
 - (IBAction)showPopover:(id)sender {
     if ([NSEvent modifierFlags] & NSAlternateKeyMask) {
         NSMenu *menu = [[NSMenu alloc] initWithTitle:@"Bright"];
+        NSMenuItem *about = [[NSMenuItem alloc] initWithTitle:@"About" action:NULL keyEquivalent:@""];
         NSMenuItem *prefs = [[NSMenuItem alloc] initWithTitle:@"Preferences" action:NULL keyEquivalent:@""];
         NSMenuItem *quit  = [[NSMenuItem alloc] initWithTitle:@"Quit" action:NULL keyEquivalent:@""];
         
@@ -63,7 +64,7 @@
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:@"https://bright-backend.herokuapp.com/input" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        if ([responseObject[@"result"][@"success"]  isEqual: @1]) {
+        if ([responseObject[@"result"][@"success"] isEqual: @1]) {
             
             /* Input returned success */
             NSString *implyingString = [NSString stringWithFormat:@"implying you meant %@", responseObject[@"result"][@"input"]];
