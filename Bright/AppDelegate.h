@@ -11,7 +11,7 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
     NSStatusItem *statusItem;
 }
-
+@property (weak) IBOutlet NSView *popoverView;
 @property (weak) IBOutlet NSPopover *popover;
 @property (weak) IBOutlet NSTextField *input;
 @property (weak) IBOutlet NSTextField *output;

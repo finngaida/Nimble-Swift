@@ -38,6 +38,7 @@
         NSMenuItem *prefs = [[NSMenuItem alloc] initWithTitle:@"Preferences" action:NULL keyEquivalent:@""];
         NSMenuItem *quit  = [[NSMenuItem alloc] initWithTitle:@"Quit" action:NULL keyEquivalent:@""];
         
+        [menu addItem:about];
         [menu addItem:prefs];
         [menu addItem:quit];
         
@@ -51,6 +52,7 @@
         
     } else {
         [_popover showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxXEdge];
+        // do something here with the size with _popoverView
 //        _output.stringValue = @"this is a big return of text";
     }
 }

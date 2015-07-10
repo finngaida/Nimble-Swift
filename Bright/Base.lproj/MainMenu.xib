@@ -17,6 +17,7 @@
                 <outlet property="input" destination="ob2-aW-ITK" id="yru-aK-wrm"/>
                 <outlet property="output" destination="sAI-Se-YD9" id="7eG-7M-RDf"/>
                 <outlet property="popover" destination="5ow-J4-0qt" id="Ch4-aO-7aL"/>
+                <outlet property="popoverView" destination="hbh-B9-bHK" id="S1N-Ta-GgP"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -25,13 +26,13 @@
                 <outlet property="view" destination="hbh-B9-bHK" id="F5T-vh-1Aw"/>
             </connections>
         </viewController>
-        <popover behavior="t" id="5ow-J4-0qt">
+        <popover appearance="HUD" behavior="t" id="5ow-J4-0qt">
             <connections>
                 <outlet property="contentViewController" destination="SRB-i7-0JS" id="Gqc-Tu-5oq"/>
             </connections>
         </popover>
         <customView id="hbh-B9-bHK">
-            <rect key="frame" x="0.0" y="5" width="355" height="184"/>
+            <rect key="frame" x="0.0" y="0.0" width="355" height="184"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ob2-aW-ITK">
@@ -58,17 +59,6 @@
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y10-mb-RRb">
-                    <rect key="frame" x="0.0" y="162" width="355" height="17"/>
-                    <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" placeholderString="volume of atlantic ocean" drawsBackground="YES" usesSingleLineMode="YES" id="BGS-yV-cii">
-                        <font key="font" metaFont="system"/>
-                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                    </searchFieldCell>
-                    <connections>
-                        <action selector="query:" target="Voe-Tx-rLC" id="1P5-XI-izf"/>
-                    </connections>
-                </searchField>
             </subviews>
             <point key="canvasLocation" x="537.5" y="297"/>
         </customView>
