@@ -14,9 +14,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     
     var statusBar = NSStatusBar.systemStatusBar()
-    var statusBarItem: NSStatusItem = NSStatusItem()
-    var menu: NSMenu = NSMenu()
-    var menuItem: NSMenuItem = NSMenuItem()
+    var statusBarItem = NSStatusItem()
+    var menu = NSMenu()
+    var menuItem = NSMenuItem()
     
     @IBAction func showMainWindow(sender: NSStatusBarButton) {
         NSLog("Query")
@@ -26,6 +26,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusBarItem = statusBar.statusItemWithLength(-1)
         statusBarItem.menu = menu
         statusBarItem.title = "Bright"
+        if let button = statusBarItem.button {
+            button.image = NSImage(named: "image")
+            button.alternateImage = NSImage(named: "alt_image")
+            button.action = Selector("showMainWindow:")
+        }
         
         menuItem.action = Selector("showMainWindow:")
         menuItem.title = "Query"
