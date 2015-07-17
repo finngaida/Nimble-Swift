@@ -7,50 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03A5BDE11AD8AE2B0046418B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A5BDE01AD8AE2B0046418B /* AppDelegate.m */; };
-		03A5BDE31AD8AE2B0046418B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A5BDE21AD8AE2B0046418B /* main.m */; };
-		03A5BDE51AD8AE2B0046418B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A5BDE41AD8AE2B0046418B /* Images.xcassets */; };
-		03A5BDE81AD8AE2B0046418B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A5BDE61AD8AE2B0046418B /* MainMenu.xib */; };
-		03A5BDF41AD8AE2B0046418B /* BrightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A5BDF31AD8AE2B0046418B /* BrightTests.m */; };
-		D6E25D4D40BA3DDA5F2E91E6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54304E69CFA8F80E834BBC02 /* libPods.a */; };
+		039A99231B58C3F7005E6E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039A99221B58C3F7005E6E93 /* AppDelegate.swift */; };
+		039A99251B58C3F7005E6E93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039A99241B58C3F7005E6E93 /* Images.xcassets */; };
+		039A99281B58C3F7005E6E93 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039A99261B58C3F7005E6E93 /* MainMenu.xib */; };
+		039A99341B58C3F8005E6E93 /* BrightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039A99331B58C3F8005E6E93 /* BrightTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		03A5BDEE1AD8AE2B0046418B /* PBXContainerItemProxy */ = {
+		039A992E1B58C3F8005E6E93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 03A5BDD21AD8AE2B0046418B /* Project object */;
+			containerPortal = 039A99151B58C3F7005E6E93 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 03A5BDD91AD8AE2B0046418B;
+			remoteGlobalIDString = 039A991C1B58C3F7005E6E93;
 			remoteInfo = Bright;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03A5BDDA1AD8AE2B0046418B /* Bright.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bright.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		03A5BDDE1AD8AE2B0046418B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03A5BDDF1AD8AE2B0046418B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		03A5BDE01AD8AE2B0046418B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		03A5BDE21AD8AE2B0046418B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		03A5BDE41AD8AE2B0046418B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		03A5BDE71AD8AE2B0046418B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		03A5BDED1AD8AE2B0046418B /* BrightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		03A5BDF21AD8AE2B0046418B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03A5BDF31AD8AE2B0046418B /* BrightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrightTests.m; sourceTree = "<group>"; };
-		1D22E487E7E658D45F25E0F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		2781F0D5E1A3BAB62C7CB39F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		54304E69CFA8F80E834BBC02 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		039A991D1B58C3F7005E6E93 /* Bright.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bright.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		039A99211B58C3F7005E6E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		039A99221B58C3F7005E6E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		039A99241B58C3F7005E6E93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		039A99271B58C3F7005E6E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		039A992D1B58C3F8005E6E93 /* BrightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		039A99321B58C3F8005E6E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		039A99331B58C3F8005E6E93 /* BrightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03A5BDD71AD8AE2B0046418B /* Frameworks */ = {
+		039A991A1B58C3F7005E6E93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6E25D4D40BA3DDA5F2E91E6 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		03A5BDEA1AD8AE2B0046418B /* Frameworks */ = {
+		039A992A1B58C3F7005E6E93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,93 +52,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03A5BDD11AD8AE2B0046418B = {
+		039A99141B58C3F7005E6E93 = {
 			isa = PBXGroup;
 			children = (
-				03A5BDDC1AD8AE2B0046418B /* Bright */,
-				03A5BDF01AD8AE2B0046418B /* BrightTests */,
-				03A5BDDB1AD8AE2B0046418B /* Products */,
-				525F5B59597B007D8176F636 /* Pods */,
-				0F33500F847E9650A8B3C570 /* Frameworks */,
+				039A991F1B58C3F7005E6E93 /* Bright */,
+				039A99301B58C3F8005E6E93 /* BrightTests */,
+				039A991E1B58C3F7005E6E93 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		03A5BDDB1AD8AE2B0046418B /* Products */ = {
+		039A991E1B58C3F7005E6E93 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				03A5BDDA1AD8AE2B0046418B /* Bright.app */,
-				03A5BDED1AD8AE2B0046418B /* BrightTests.xctest */,
+				039A991D1B58C3F7005E6E93 /* Bright.app */,
+				039A992D1B58C3F8005E6E93 /* BrightTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		03A5BDDC1AD8AE2B0046418B /* Bright */ = {
+		039A991F1B58C3F7005E6E93 /* Bright */ = {
 			isa = PBXGroup;
 			children = (
-				03A5BDDF1AD8AE2B0046418B /* AppDelegate.h */,
-				03A5BDE01AD8AE2B0046418B /* AppDelegate.m */,
-				03A5BDE41AD8AE2B0046418B /* Images.xcassets */,
-				03A5BDE61AD8AE2B0046418B /* MainMenu.xib */,
-				03A5BDDD1AD8AE2B0046418B /* Supporting Files */,
+				039A99221B58C3F7005E6E93 /* AppDelegate.swift */,
+				039A99241B58C3F7005E6E93 /* Images.xcassets */,
+				039A99261B58C3F7005E6E93 /* MainMenu.xib */,
+				039A99201B58C3F7005E6E93 /* Supporting Files */,
 			);
 			path = Bright;
 			sourceTree = "<group>";
 		};
-		03A5BDDD1AD8AE2B0046418B /* Supporting Files */ = {
+		039A99201B58C3F7005E6E93 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				03A5BDDE1AD8AE2B0046418B /* Info.plist */,
-				03A5BDE21AD8AE2B0046418B /* main.m */,
+				039A99211B58C3F7005E6E93 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		03A5BDF01AD8AE2B0046418B /* BrightTests */ = {
+		039A99301B58C3F8005E6E93 /* BrightTests */ = {
 			isa = PBXGroup;
 			children = (
-				03A5BDF31AD8AE2B0046418B /* BrightTests.m */,
-				03A5BDF11AD8AE2B0046418B /* Supporting Files */,
+				039A99331B58C3F8005E6E93 /* BrightTests.swift */,
+				039A99311B58C3F8005E6E93 /* Supporting Files */,
 			);
 			path = BrightTests;
 			sourceTree = "<group>";
 		};
-		03A5BDF11AD8AE2B0046418B /* Supporting Files */ = {
+		039A99311B58C3F8005E6E93 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				03A5BDF21AD8AE2B0046418B /* Info.plist */,
+				039A99321B58C3F8005E6E93 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0F33500F847E9650A8B3C570 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				54304E69CFA8F80E834BBC02 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		525F5B59597B007D8176F636 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1D22E487E7E658D45F25E0F0 /* Pods.debug.xcconfig */,
-				2781F0D5E1A3BAB62C7CB39F /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		03A5BDD91AD8AE2B0046418B /* Bright */ = {
+		039A991C1B58C3F7005E6E93 /* Bright */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03A5BDF71AD8AE2B0046418B /* Build configuration list for PBXNativeTarget "Bright" */;
+			buildConfigurationList = 039A99371B58C3F8005E6E93 /* Build configuration list for PBXNativeTarget "Bright" */;
 			buildPhases = (
-				610D4B849020A0FAC998F1BF /* Check Pods Manifest.lock */,
-				03A5BDD61AD8AE2B0046418B /* Sources */,
-				03A5BDD71AD8AE2B0046418B /* Frameworks */,
-				03A5BDD81AD8AE2B0046418B /* Resources */,
-				08BEEE3CD848E7DB6A8871E1 /* Copy Pods Resources */,
+				039A99191B58C3F7005E6E93 /* Sources */,
+				039A991A1B58C3F7005E6E93 /* Frameworks */,
+				039A991B1B58C3F7005E6E93 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -154,46 +123,46 @@
 			);
 			name = Bright;
 			productName = Bright;
-			productReference = 03A5BDDA1AD8AE2B0046418B /* Bright.app */;
+			productReference = 039A991D1B58C3F7005E6E93 /* Bright.app */;
 			productType = "com.apple.product-type.application";
 		};
-		03A5BDEC1AD8AE2B0046418B /* BrightTests */ = {
+		039A992C1B58C3F7005E6E93 /* BrightTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03A5BDFA1AD8AE2B0046418B /* Build configuration list for PBXNativeTarget "BrightTests" */;
+			buildConfigurationList = 039A993A1B58C3F8005E6E93 /* Build configuration list for PBXNativeTarget "BrightTests" */;
 			buildPhases = (
-				03A5BDE91AD8AE2B0046418B /* Sources */,
-				03A5BDEA1AD8AE2B0046418B /* Frameworks */,
-				03A5BDEB1AD8AE2B0046418B /* Resources */,
+				039A99291B58C3F7005E6E93 /* Sources */,
+				039A992A1B58C3F7005E6E93 /* Frameworks */,
+				039A992B1B58C3F7005E6E93 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				03A5BDEF1AD8AE2B0046418B /* PBXTargetDependency */,
+				039A992F1B58C3F8005E6E93 /* PBXTargetDependency */,
 			);
 			name = BrightTests;
 			productName = BrightTests;
-			productReference = 03A5BDED1AD8AE2B0046418B /* BrightTests.xctest */;
+			productReference = 039A992D1B58C3F8005E6E93 /* BrightTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		03A5BDD21AD8AE2B0046418B /* Project object */ = {
+		039A99151B58C3F7005E6E93 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
-				ORGANIZATIONNAME = "Intui, Inc.";
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Intui;
 				TargetAttributes = {
-					03A5BDD91AD8AE2B0046418B = {
-						CreatedOnToolsVersion = 6.3;
+					039A991C1B58C3F7005E6E93 = {
+						CreatedOnToolsVersion = 6.4;
 					};
-					03A5BDEC1AD8AE2B0046418B = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = 03A5BDD91AD8AE2B0046418B;
+					039A992C1B58C3F7005E6E93 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 039A991C1B58C3F7005E6E93;
 					};
 				};
 			};
-			buildConfigurationList = 03A5BDD51AD8AE2B0046418B /* Build configuration list for PBXProject "Bright" */;
+			buildConfigurationList = 039A99181B58C3F7005E6E93 /* Build configuration list for PBXProject "Bright" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -201,28 +170,28 @@
 				en,
 				Base,
 			);
-			mainGroup = 03A5BDD11AD8AE2B0046418B;
-			productRefGroup = 03A5BDDB1AD8AE2B0046418B /* Products */;
+			mainGroup = 039A99141B58C3F7005E6E93;
+			productRefGroup = 039A991E1B58C3F7005E6E93 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				03A5BDD91AD8AE2B0046418B /* Bright */,
-				03A5BDEC1AD8AE2B0046418B /* BrightTests */,
+				039A991C1B58C3F7005E6E93 /* Bright */,
+				039A992C1B58C3F7005E6E93 /* BrightTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		03A5BDD81AD8AE2B0046418B /* Resources */ = {
+		039A991B1B58C3F7005E6E93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A5BDE51AD8AE2B0046418B /* Images.xcassets in Resources */,
-				03A5BDE81AD8AE2B0046418B /* MainMenu.xib in Resources */,
+				039A99251B58C3F7005E6E93 /* Images.xcassets in Resources */,
+				039A99281B58C3F7005E6E93 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		03A5BDEB1AD8AE2B0046418B /* Resources */ = {
+		039A992B1B58C3F7005E6E93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -231,72 +200,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		08BEEE3CD848E7DB6A8871E1 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		610D4B849020A0FAC998F1BF /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		03A5BDD61AD8AE2B0046418B /* Sources */ = {
+		039A99191B58C3F7005E6E93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A5BDE31AD8AE2B0046418B /* main.m in Sources */,
-				03A5BDE11AD8AE2B0046418B /* AppDelegate.m in Sources */,
+				039A99231B58C3F7005E6E93 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		03A5BDE91AD8AE2B0046418B /* Sources */ = {
+		039A99291B58C3F7005E6E93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A5BDF41AD8AE2B0046418B /* BrightTests.m in Sources */,
+				039A99341B58C3F8005E6E93 /* BrightTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		03A5BDEF1AD8AE2B0046418B /* PBXTargetDependency */ = {
+		039A992F1B58C3F8005E6E93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 03A5BDD91AD8AE2B0046418B /* Bright */;
-			targetProxy = 03A5BDEE1AD8AE2B0046418B /* PBXContainerItemProxy */;
+			target = 039A991C1B58C3F7005E6E93 /* Bright */;
+			targetProxy = 039A992E1B58C3F8005E6E93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		03A5BDE61AD8AE2B0046418B /* MainMenu.xib */ = {
+		039A99261B58C3F7005E6E93 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				03A5BDE71AD8AE2B0046418B /* Base */,
+				039A99271B58C3F7005E6E93 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -304,7 +239,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		03A5BDF51AD8AE2B0046418B /* Debug */ = {
+		039A99351B58C3F8005E6E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -344,10 +279,11 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		03A5BDF61AD8AE2B0046418B /* Release */ = {
+		039A99361B58C3F8005E6E93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -383,9 +319,8 @@
 			};
 			name = Release;
 		};
-		03A5BDF81AD8AE2B0046418B /* Debug */ = {
+		039A99381B58C3F8005E6E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D22E487E7E658D45F25E0F0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -395,9 +330,8 @@
 			};
 			name = Debug;
 		};
-		03A5BDF91AD8AE2B0046418B /* Release */ = {
+		039A99391B58C3F8005E6E93 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2781F0D5E1A3BAB62C7CB39F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -407,7 +341,7 @@
 			};
 			name = Release;
 		};
-		03A5BDFB1AD8AE2B0046418B /* Debug */ = {
+		039A993B1B58C3F8005E6E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -427,7 +361,7 @@
 			};
 			name = Debug;
 		};
-		03A5BDFC1AD8AE2B0046418B /* Release */ = {
+		039A993C1B58C3F8005E6E93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -446,34 +380,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03A5BDD51AD8AE2B0046418B /* Build configuration list for PBXProject "Bright" */ = {
+		039A99181B58C3F7005E6E93 /* Build configuration list for PBXProject "Bright" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03A5BDF51AD8AE2B0046418B /* Debug */,
-				03A5BDF61AD8AE2B0046418B /* Release */,
+				039A99351B58C3F8005E6E93 /* Debug */,
+				039A99361B58C3F8005E6E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		03A5BDF71AD8AE2B0046418B /* Build configuration list for PBXNativeTarget "Bright" */ = {
+		039A99371B58C3F8005E6E93 /* Build configuration list for PBXNativeTarget "Bright" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03A5BDF81AD8AE2B0046418B /* Debug */,
-				03A5BDF91AD8AE2B0046418B /* Release */,
+				039A99381B58C3F8005E6E93 /* Debug */,
+				039A99391B58C3F8005E6E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		03A5BDFA1AD8AE2B0046418B /* Build configuration list for PBXNativeTarget "BrightTests" */ = {
+		039A993A1B58C3F8005E6E93 /* Build configuration list for PBXNativeTarget "BrightTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03A5BDFB1AD8AE2B0046418B /* Debug */,
-				03A5BDFC1AD8AE2B0046418B /* Release */,
+				039A993B1B58C3F8005E6E93 /* Debug */,
+				039A993C1B58C3F8005E6E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 03A5BDD21AD8AE2B0046418B /* Project object */;
+	rootObject = 039A99151B58C3F7005E6E93 /* Project object */;
 }
