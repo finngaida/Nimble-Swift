@@ -23,10 +23,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     override func awakeFromNib() {
-        statusBarItem = statusBar.statusItemWithLength(-1)
+        statusBarItem = statusBar.statusItemWithLength(-2)
         statusBarItem.menu = menu
-        statusBarItem.title = "Bright"
+        statusBarItem.title = ""
         if let button = statusBarItem.button {
+            NSLog("test")
             button.image = NSImage(named: "image")
             button.alternateImage = NSImage(named: "alt_image")
             button.action = Selector("showMainWindow:")
