@@ -11,10 +11,8 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    @IBOutlet weak var window: NSWindow!
-    
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
-    let windowController = NSWindowController()
+    let popover = NSPopover()
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         
@@ -24,13 +22,26 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.action = Selector("toggleMenu:")
         }
         
-        window.setWindowController(windowController)
-        window.makeMainWindow()
-        
+        popover.contentViewController = MenuViewController(nibName:"MenuViewController", bundle:nil)
+        popover.behavior = NSPopoverBehavior.Transient
+    }
+    
+    func showMenu(sender: AnyObject?) {
+        if let button = statusItem.button {
+            popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: NSMinYEdge)
+        }
+    }
+    
+    func closePopover(sender: AnyObject?) {
+        popover.performClose(sender)
     }
     
     func toggleMenu(sender: AnyObject?) {
-        println("frame: \(window.frame)")
+        if popover.shown {
+            closePopover(sender)
+        } else {
+            showMenu(sender)
+        }
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
