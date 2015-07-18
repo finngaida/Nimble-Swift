@@ -13,6 +13,5 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Bright" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <customObject id="Uxf-jK-JaR" customClass="StatusMenuController" customModule="Bright" customModuleProvider="target"/>
     </objects>
 </document>
