@@ -11,20 +11,26 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    let popover = NSPopover()
+    @IBOutlet weak var window: NSWindow!
+    
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
+    let windowController = NSWindowController()
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         
         if let button = statusItem.button {
             statusItem.image = NSImage(named: "icon")
             statusItem.alternateImage = NSImage(named: "alt_icon")
-            button.action = Selector("toggleMainMenu:")
+            button.action = Selector("toggleMenu:")
         }
+        
+        window.setWindowController(windowController)
+        window.makeMainWindow()
+        
     }
     
-    func toggleMainMenu(sender: AnyObject?) {
-        println("fuck")
+    func toggleMenu(sender: AnyObject?) {
+        println("frame: \(window.frame)")
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
