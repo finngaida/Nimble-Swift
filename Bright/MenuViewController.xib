@@ -7,25 +7,34 @@
         <customObject id="-2" userLabel="File's Owner" customClass="MenuViewController" customModule="Bright" customModuleProvider="target">
             <connections>
                 <outlet property="input" destination="V53-ux-Cyd" id="NhT-74-OTL"/>
+                <outlet property="plaintext" destination="5WM-wm-6yV" id="GcG-So-kPJ"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="46"/>
+            <rect key="frame" x="0.0" y="-2" width="480" height="177"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V53-ux-Cyd">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="46"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="this is placeholder string" drawsBackground="YES" id="hQD-ty-1bn">
+                    <rect key="frame" x="0.0" y="131" width="480" height="46"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" title="how big is the atlantic ocean?" placeholderString="" drawsBackground="YES" id="hQD-ty-1bn">
                         <font key="font" metaFont="system" size="30"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5WM-wm-6yV">
+                    <rect key="frame" x="202" y="70" width="77" height="36"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="ebC-Uy-H4l">
+                        <font key="font" metaFont="system" size="30"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
-            <point key="canvasLocation" x="286" y="197"/>
+            <point key="canvasLocation" x="286" y="262.5"/>
         </customView>
     </objects>
 </document>

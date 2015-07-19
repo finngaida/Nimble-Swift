@@ -6,6 +6,9 @@
 //  Copyright (c) 2015 Intui. All rights reserved.
 //
 
+// I wrote too much here for the popover when I should've given it its own controller
+// but w/e
+
 import Cocoa
 
 @NSApplicationMain
@@ -24,6 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         popover.contentViewController = MenuViewController(nibName:"MenuViewController", bundle:nil)
         popover.behavior = NSPopoverBehavior.Transient
+        popover.animates = false
     }
     
     func showMenu(sender: AnyObject?) {
