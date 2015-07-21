@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0304038B1B5DE5830080A4E2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0304038A1B5DE5830080A4E2 /* SwiftyJSON.swift */; };
 		039A99231B58C3F7005E6E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039A99221B58C3F7005E6E93 /* AppDelegate.swift */; };
 		039A99251B58C3F7005E6E93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039A99241B58C3F7005E6E93 /* Images.xcassets */; };
 		039A99281B58C3F7005E6E93 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039A99261B58C3F7005E6E93 /* MainMenu.xib */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0304038A1B5DE5830080A4E2 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		039A991D1B58C3F7005E6E93 /* Bright.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bright.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039A99211B58C3F7005E6E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		039A99221B58C3F7005E6E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		039A991F1B58C3F7005E6E93 /* Bright */ = {
 			isa = PBXGroup;
 			children = (
+				0304038A1B5DE5830080A4E2 /* SwiftyJSON.swift */,
 				039A99221B58C3F7005E6E93 /* AppDelegate.swift */,
 				03BA701E1B5A25A900858FD6 /* MenuViewController.swift */,
 				03BA701F1B5A25A900858FD6 /* MenuViewController.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0304038B1B5DE5830080A4E2 /* SwiftyJSON.swift in Sources */,
 				039A99231B58C3F7005E6E93 /* AppDelegate.swift in Sources */,
 				03BA70201B5A25A900858FD6 /* MenuViewController.swift in Sources */,
 			);
