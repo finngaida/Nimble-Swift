@@ -1,9 +1,9 @@
 //
 //  MenuViewController.swift
-//  Bright
+//  Nimble
 //
 //  Created by Josh Trommel on 2015-07-17.
-//  Copyright (c) 2015 Intui. All rights reserved.
+//  Copyright (c) 2015 Bright. All rights reserved.
 //
 
 import Cocoa

@@ -15,23 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "039A991C1B58C3F7005E6E93"
-               BuildableName = "Bright.app"
-               BlueprintName = "Bright"
-               ReferencedContainer = "container:Bright.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "039A992C1B58C3F7005E6E93"
-               BuildableName = "BrightTests.xctest"
-               BlueprintName = "BrightTests"
-               ReferencedContainer = "container:Bright.xcodeproj">
+               BuildableName = "Nimble.app"
+               BlueprintName = "Nimble"
+               ReferencedContainer = "container:Nimble.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "039A992C1B58C3F7005E6E93"
-               BuildableName = "BrightTests.xctest"
-               BlueprintName = "BrightTests"
-               ReferencedContainer = "container:Bright.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "039A991C1B58C3F7005E6E93"
-            BuildableName = "Bright.app"
-            BlueprintName = "Bright"
-            ReferencedContainer = "container:Bright.xcodeproj">
+            BuildableName = "Nimble.app"
+            BlueprintName = "Nimble"
+            ReferencedContainer = "container:Nimble.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "039A991C1B58C3F7005E6E93"
-            BuildableName = "Bright.app"
-            BlueprintName = "Bright"
-            ReferencedContainer = "container:Bright.xcodeproj">
+            BuildableName = "Nimble.app"
+            BlueprintName = "Nimble"
+            ReferencedContainer = "container:Nimble.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "039A991C1B58C3F7005E6E93"
-            BuildableName = "Bright.app"
-            BlueprintName = "Bright"
-            ReferencedContainer = "container:Bright.xcodeproj">
+            BuildableName = "Nimble.app"
+            BlueprintName = "Nimble"
+            ReferencedContainer = "container:Nimble.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

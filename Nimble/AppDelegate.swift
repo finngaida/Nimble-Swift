@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Bright
+//  Numble
 //
 //  Created by Josh Trommel on 2015-07-17.
-//  Copyright (c) 2015 Intui. All rights reserved.
+//  Copyright (c) 2015 Bright. All rights reserved.
 //
 
 // I wrote too much here for the popover when I should've given it its own controller

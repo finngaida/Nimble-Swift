@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="MenuViewController" customModule="Bright" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="MenuViewController" customModule="Nimble" customModuleProvider="target">
             <connections>
                 <outlet property="assumption" destination="89f-C9-W07" id="162-qZ-XlW"/>
                 <outlet property="input" destination="V53-ux-Cyd" id="NhT-74-OTL"/>

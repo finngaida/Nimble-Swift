@@ -11,7 +11,7 @@
 		039A99231B58C3F7005E6E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039A99221B58C3F7005E6E93 /* AppDelegate.swift */; };
 		039A99251B58C3F7005E6E93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039A99241B58C3F7005E6E93 /* Images.xcassets */; };
 		039A99281B58C3F7005E6E93 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039A99261B58C3F7005E6E93 /* MainMenu.xib */; };
-		039A99341B58C3F8005E6E93 /* BrightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039A99331B58C3F8005E6E93 /* BrightTests.swift */; };
+		039A99341B58C3F8005E6E93 /* NimbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039A99331B58C3F8005E6E93 /* NimbleTests.swift */; };
 		03BA70201B5A25A900858FD6 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA701E1B5A25A900858FD6 /* MenuViewController.swift */; };
 		03BA70211B5A25A900858FD6 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03BA701F1B5A25A900858FD6 /* MenuViewController.xib */; };
 /* End PBXBuildFile section */
@@ -22,20 +22,20 @@
 			containerPortal = 039A99151B58C3F7005E6E93 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 039A991C1B58C3F7005E6E93;
-			remoteInfo = Bright;
+			remoteInfo = Nimble;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0304038A1B5DE5830080A4E2 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		039A991D1B58C3F7005E6E93 /* Bright.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bright.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		039A991D1B58C3F7005E6E93 /* Nimble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nimble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039A99211B58C3F7005E6E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		039A99221B58C3F7005E6E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		039A99241B58C3F7005E6E93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		039A99271B58C3F7005E6E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		039A992D1B58C3F8005E6E93 /* BrightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		039A992D1B58C3F8005E6E93 /* NimbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NimbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		039A99321B58C3F8005E6E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		039A99331B58C3F8005E6E93 /* BrightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightTests.swift; sourceTree = "<group>"; };
+		039A99331B58C3F8005E6E93 /* NimbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleTests.swift; sourceTree = "<group>"; };
 		03BA701E1B5A25A900858FD6 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		03BA701F1B5A25A900858FD6 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,8 +61,8 @@
 		039A99141B58C3F7005E6E93 = {
 			isa = PBXGroup;
 			children = (
-				039A991F1B58C3F7005E6E93 /* Bright */,
-				039A99301B58C3F8005E6E93 /* BrightTests */,
+				039A991F1B58C3F7005E6E93 /* Nimble */,
+				039A99301B58C3F8005E6E93 /* NimbleTests */,
 				039A991E1B58C3F7005E6E93 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 		039A991E1B58C3F7005E6E93 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				039A991D1B58C3F7005E6E93 /* Bright.app */,
-				039A992D1B58C3F8005E6E93 /* BrightTests.xctest */,
+				039A991D1B58C3F7005E6E93 /* Nimble.app */,
+				039A992D1B58C3F8005E6E93 /* NimbleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		039A991F1B58C3F7005E6E93 /* Bright */ = {
+		039A991F1B58C3F7005E6E93 /* Nimble */ = {
 			isa = PBXGroup;
 			children = (
 				0304038A1B5DE5830080A4E2 /* SwiftyJSON.swift */,
@@ -87,7 +87,7 @@
 				039A99241B58C3F7005E6E93 /* Images.xcassets */,
 				039A99201B58C3F7005E6E93 /* Supporting Files */,
 			);
-			path = Bright;
+			path = Nimble;
 			sourceTree = "<group>";
 		};
 		039A99201B58C3F7005E6E93 /* Supporting Files */ = {
@@ -98,13 +98,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		039A99301B58C3F8005E6E93 /* BrightTests */ = {
+		039A99301B58C3F8005E6E93 /* NimbleTests */ = {
 			isa = PBXGroup;
 			children = (
-				039A99331B58C3F8005E6E93 /* BrightTests.swift */,
+				039A99331B58C3F8005E6E93 /* NimbleTests.swift */,
 				039A99311B58C3F8005E6E93 /* Supporting Files */,
 			);
-			path = BrightTests;
+			path = NimbleTests;
 			sourceTree = "<group>";
 		};
 		039A99311B58C3F8005E6E93 /* Supporting Files */ = {
@@ -118,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		039A991C1B58C3F7005E6E93 /* Bright */ = {
+		039A991C1B58C3F7005E6E93 /* Nimble */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 039A99371B58C3F8005E6E93 /* Build configuration list for PBXNativeTarget "Bright" */;
+			buildConfigurationList = 039A99371B58C3F8005E6E93 /* Build configuration list for PBXNativeTarget "Nimble" */;
 			buildPhases = (
 				039A99191B58C3F7005E6E93 /* Sources */,
 				039A991A1B58C3F7005E6E93 /* Frameworks */,
@@ -130,14 +130,14 @@
 			);
 			dependencies = (
 			);
-			name = Bright;
-			productName = Bright;
-			productReference = 039A991D1B58C3F7005E6E93 /* Bright.app */;
+			name = Nimble;
+			productName = Nimble;
+			productReference = 039A991D1B58C3F7005E6E93 /* Nimble.app */;
 			productType = "com.apple.product-type.application";
 		};
-		039A992C1B58C3F7005E6E93 /* BrightTests */ = {
+		039A992C1B58C3F7005E6E93 /* NimbleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 039A993A1B58C3F8005E6E93 /* Build configuration list for PBXNativeTarget "BrightTests" */;
+			buildConfigurationList = 039A993A1B58C3F8005E6E93 /* Build configuration list for PBXNativeTarget "NimbleTests" */;
 			buildPhases = (
 				039A99291B58C3F7005E6E93 /* Sources */,
 				039A992A1B58C3F7005E6E93 /* Frameworks */,
@@ -148,9 +148,9 @@
 			dependencies = (
 				039A992F1B58C3F8005E6E93 /* PBXTargetDependency */,
 			);
-			name = BrightTests;
-			productName = BrightTests;
-			productReference = 039A992D1B58C3F8005E6E93 /* BrightTests.xctest */;
+			name = NimbleTests;
+			productName = NimbleTests;
+			productReference = 039A992D1B58C3F8005E6E93 /* NimbleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -171,7 +171,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 039A99181B58C3F7005E6E93 /* Build configuration list for PBXProject "Bright" */;
+			buildConfigurationList = 039A99181B58C3F7005E6E93 /* Build configuration list for PBXProject "Nimble" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -184,8 +184,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				039A991C1B58C3F7005E6E93 /* Bright */,
-				039A992C1B58C3F7005E6E93 /* BrightTests */,
+				039A991C1B58C3F7005E6E93 /* Nimble */,
+				039A992C1B58C3F7005E6E93 /* NimbleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				039A99341B58C3F8005E6E93 /* BrightTests.swift in Sources */,
+				039A99341B58C3F8005E6E93 /* NimbleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +234,7 @@
 /* Begin PBXTargetDependency section */
 		039A992F1B58C3F8005E6E93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 039A991C1B58C3F7005E6E93 /* Bright */;
+			target = 039A991C1B58C3F7005E6E93 /* Nimble */;
 			targetProxy = 039A992E1B58C3F8005E6E93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -336,9 +336,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Bright/Info.plist;
+				INFOPLIST_FILE = Nimble/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Nimble;
 			};
 			name = Debug;
 		};
@@ -347,9 +347,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Bright/Info.plist;
+				INFOPLIST_FILE = Nimble/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Nimble;
 			};
 			name = Release;
 		};
@@ -366,10 +366,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BrightTests/Info.plist;
+				INFOPLIST_FILE = NimbleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bright.app/Contents/MacOS/Bright";
+				PRODUCT_NAME = NimbleTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nimble.app/Contents/MacOS/Nimble";
 			};
 			name = Debug;
 		};
@@ -382,17 +382,17 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BrightTests/Info.plist;
+				INFOPLIST_FILE = NimbleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bright.app/Contents/MacOS/Bright";
+				PRODUCT_NAME = NimbleTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nimble.app/Contents/MacOS/Nimble";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		039A99181B58C3F7005E6E93 /* Build configuration list for PBXProject "Bright" */ = {
+		039A99181B58C3F7005E6E93 /* Build configuration list for PBXProject "Nimble" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				039A99351B58C3F8005E6E93 /* Debug */,
@@ -401,7 +401,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		039A99371B58C3F8005E6E93 /* Build configuration list for PBXNativeTarget "Bright" */ = {
+		039A99371B58C3F8005E6E93 /* Build configuration list for PBXNativeTarget "Nimble" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				039A99381B58C3F8005E6E93 /* Debug */,
@@ -410,7 +410,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		039A993A1B58C3F8005E6E93 /* Build configuration list for PBXNativeTarget "BrightTests" */ = {
+		039A993A1B58C3F8005E6E93 /* Build configuration list for PBXNativeTarget "NimbleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				039A993B1B58C3F8005E6E93 /* Debug */,
