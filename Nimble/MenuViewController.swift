@@ -10,6 +10,7 @@ import Cocoa
 
 class MenuViewController: NSViewController {
 
+    @IBOutlet weak var progress: NSProgressIndicator!
     @IBOutlet weak var input: NSTextField!
     @IBOutlet weak var assumption: NSTextField!
     @IBOutlet weak var plaintext: NSTextField!
@@ -23,13 +24,16 @@ class MenuViewController: NSViewController {
         assumption.selectable = true
         plaintext.selectable = true
         plaintext.stringValue = ""
+        // input.cell()?.focusRingType = NSFocusRingType.None // whuaahh
     }
     
     func query(sender: NSTextField?) {
         let query = sender!.stringValue
         let escapedURL = query.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())
         
-        let url = NSURL(string: "https://bright-backend.herokuapp.com/input?i=\(escapedURL!)")
+        let url = NSURL(string: "https://nimble-backend.herokuapp.com/input?i=\(escapedURL!)")
+        
+        progress.startAnimation(self)
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
             let json = JSON(data: data)
@@ -44,11 +48,10 @@ class MenuViewController: NSViewController {
                 }
                 
             } else {
-                let badYiff = "do NOT sign me the FUCK up 👎🐺👎🐺👎🐺👎🐺👎🐺 bad shit ba̷̶ ԁ " + "sHit 👎 thats ❌ some bad 👎👎shit right 👎👎 th 👎 ere 👎👎👎 right ❌ " + "there ❌ ❌ if i do ƽaү so my selｆ🚫 i say so 🚫 thats not what im talking " + "about right there right there (chorus: ʳᶦᵍʰᵗ ᵗʰᵉʳᵉ) mMMMMᎷМ 🚫 👎 👎👎НO0Оଠ" + "ＯOOＯOОଠଠOoooᵒᵒᵒᵒᵒᵒᵒᵒᵒ 👎 👎👎 👎 🚫 👎 🐺 👎👎Bad shit"
-                self.assumption.stringValue = "bad yiff bad yiff"
-                self.plaintext.stringValue = badYiff
-                println(error)
+                self.plaintext.stringValue = ""
+                self.assumption.stringValue = "Uh oh! I think your query, \"\(self.input.stringValue)\", might be invalid."
             }
+            self.progress.stopAnimation(self)
         }
         
         task.resume()

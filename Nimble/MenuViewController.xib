@@ -8,7 +8,8 @@
             <connections>
                 <outlet property="assumption" destination="89f-C9-W07" id="162-qZ-XlW"/>
                 <outlet property="input" destination="V53-ux-Cyd" id="NhT-74-OTL"/>
-                <outlet property="plaintext" destination="3BJ-ww-Nn2" id="ZLT-Gq-iLh"/>
+                <outlet property="plaintext" destination="8DM-Xo-Wch" id="Lnh-ZQ-Iw2"/>
+                <outlet property="progress" destination="iZy-0p-CZF" id="Mmo-0S-1ZL"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -19,29 +20,44 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="89f-C9-W07">
-                    <rect key="frame" x="18" y="101" width="444" height="17"/>
+                    <rect key="frame" x="18" y="92" width="444" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="assuming you meant" id="1Ja-cE-DDA">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" red="0.91764705882352937" green="0.70196078431372544" blue="0.050980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                     </textFieldCell>
                 </textField>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3BJ-ww-Nn2">
-                    <rect key="frame" x="18" y="15" width="444" height="42"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="BrT-dZ-eTq">
-                        <font key="font" metaFont="system"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V53-ux-Cyd">
-                    <rect key="frame" x="-2" y="126" width="484" height="36"/>
+                    <rect key="frame" x="18" y="117" width="444" height="36"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" alignment="left" placeholderString="How big is the Caribbean Sea?" id="hQD-ty-1bn">
                         <font key="font" metaFont="system" size="30"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="iZy-0p-CZF">
+                    <rect key="frame" x="444" y="127" width="16" height="16"/>
+                </progressIndicator>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8DM-Xo-Wch">
+                    <rect key="frame" x="10" y="5" width="452" height="74"/>
+                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" id="kHV-Jz-I1Z">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ndC-Ma-UCv">
+                    <rect key="frame" x="448" y="-9" width="39" height="38"/>
+                    <buttonCell key="cell" type="round" bezelStyle="circular" alignment="center" borderStyle="border" imageScaling="proportionallyDown" id="JXY-59-Zo1">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="label"/>
+                        <string key="keyEquivalent">q</string>
+                        <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="terminate:" target="-1" id="wX6-tD-rSg"/>
+                    </connections>
+                </button>
             </subviews>
             <point key="canvasLocation" x="355" y="239"/>
         </customView>
