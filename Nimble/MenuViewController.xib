@@ -21,7 +21,7 @@
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="89f-C9-W07">
                     <rect key="frame" x="18" y="92" width="444" height="17"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="assuming you meant" id="1Ja-cE-DDA">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" alignment="center" title="assuming you meant" id="1Ja-cE-DDA">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" red="0.91764705882352937" green="0.70196078431372544" blue="0.050980392156862744" alpha="1" colorSpace="calibratedRGB"/>
@@ -40,7 +40,7 @@
                 </progressIndicator>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8DM-Xo-Wch">
                     <rect key="frame" x="10" y="5" width="452" height="74"/>
-                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" id="kHV-Jz-I1Z">
+                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" state="on" id="kHV-Jz-I1Z">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>

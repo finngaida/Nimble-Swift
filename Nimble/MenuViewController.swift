@@ -21,8 +21,6 @@ class MenuViewController: NSViewController {
         input.action = Selector("query:")
         input.becomeFirstResponder()
         assumption.stringValue = ""
-        assumption.selectable = true
-        plaintext.selectable = true
         plaintext.stringValue = ""
         // input.cell()?.focusRingType = NSFocusRingType.None // whuaahh
     }
@@ -48,8 +46,10 @@ class MenuViewController: NSViewController {
                 }
                 
             } else {
-                self.plaintext.stringValue = ""
+                let url = json["result"]["origin_url"]
                 self.assumption.stringValue = "Uh oh! I think your query, \"\(self.input.stringValue)\", might be invalid."
+                self.plaintext.stringValue = "You might have better luck searching it on Wolfram|Alpha: \(url)"
+                
             }
             self.progress.stopAnimation(self)
         }
