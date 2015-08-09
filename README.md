@@ -24,5 +24,5 @@ A Wolfram|Alpha® OS X menu bar app.
    - Presents a fuckton of info on W|A, but mostly images and graphs.
  - [ ] `Gangnam Style lyrics`
    - It doesn't return lyrics for some reason. Copyright, perhaps?
- - [ ] Diving numbers where the answer has a recurring decimal (e.g.: `69 / 420`)
+ - [ ] Dividing numbers where the answer has a recurring decimal (e.g.: `69 / 420`)
    - Returns the simplified fraction (`23/140`) instead of the number (`0.16428571`)
