@@ -19,7 +19,7 @@ A Wolfram|Alpha® OS X menu bar app.
 - [ ] Make the popover resize depending on the length of its contents
 
 ## Queries that return unexpected results
-You can help us fix these by comparing your query with our main server, `https://nimble-backend.herokuapp.com/input?i=query`, and our test server, `https://nimble-backend-test.herokuapp.com/input?i=query`. [Create an issue](https://github.com/madebybright/Nimble/issues/new) and post the query, along with labeled responses from both servers. This will help us identify the problem.
+You can help us fix these by comparing your query with our main server, https://nimble-backend.herokuapp.com/input?i=query, and our test server, https://nimble-backend-test.herokuapp.com/input?i=query. [Create an issue](https://github.com/madebybright/Nimble/issues/new) and post the query, along with labeled responses from both servers. This will help us identify the problem.
 
 ### Examples
  - [ ] `19 year old male`
