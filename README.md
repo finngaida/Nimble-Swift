@@ -6,7 +6,7 @@ A Wolfram|Alpha® OS X menu bar app.
 ## To-do
 
 ### ASAP
-- [ ] Error for blank results, with link to WolframAlpha.com search
+- [x] Error for blank results, with link to WolframAlpha.com search
   - [ ] For more complicated queries, display the result but also a link to the W|A search.
 - [ ] Support for sub/superscript (e.g.: C_8H_10N_4O_2, x^3)
 - [ ] Allow text box to be selectable with ⌘A, copiable with ⌘C, etc.
@@ -19,7 +19,9 @@ A Wolfram|Alpha® OS X menu bar app.
 - [ ] Make the popover resize depending on the length of its contents
 
 ## Queries that return unexpected results
-(Cross them off when fixed)
+You can help us fix these by comparing your query with our main server, `https://nimble-backend.herokuapp.com/input?i=query`, and our test server, `https://nimble-backend-test.herokuapp.com/input?i=query`. [Create an issue](https://github.com/madebybright/Nimble/issues/new) and post the query, along with labeled responses from both servers. This will help us identify the problem.
+
+### Examples
  - [ ] `19 year old male`
    - Presents a fuckton of info on W|A, but mostly images and graphs.
  - [ ] `Gangnam Style lyrics`
