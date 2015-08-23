@@ -22,7 +22,9 @@ class MenuViewController: NSViewController {
         input.becomeFirstResponder()
         assumption.stringValue = ""
         plaintext.stringValue = ""
-        // input.cell()?.focusRingType = NSFocusRingType.None // whuaahh
+        
+//        self.view.frame.size.height = 56
+//        self.view.frame.size.width  = 480
     }
     
     func query(sender: NSTextField?) {
@@ -37,8 +39,10 @@ class MenuViewController: NSViewController {
             let json = JSON(data: data)
             if json["result"]["success"] == true {
                 
+//                self.view.frame.size.height = 100
+                
                 if let input = json["result"]["input"].string {
-                    self.assumption.stringValue = "\"\(input)\""
+                    self.assumption.stringValue = "Assuming you meant \"\(input)\""
                 }
                 
                 if let result = json["result"]["result"]["plaintext"].string {
