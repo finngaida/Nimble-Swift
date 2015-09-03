@@ -22,43 +22,47 @@ class MenuViewController: NSViewController {
         input.becomeFirstResponder()
         assumption.stringValue = ""
         plaintext.stringValue = ""
-        
-//        self.view.frame.size.height = 56
-//        self.view.frame.size.width  = 480
     }
     
     func query(sender: NSTextField?) {
         let query = sender!.stringValue
         let escapedURL = query.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())
-        
         let url = NSURL(string: "https://nimble-backend.herokuapp.com/input?i=\(escapedURL!)")
         
-        progress.startAnimation(self)
+        // Before anything happens, check to see if it's a basic math problem we can solve ourselves
+        let expression = NSExpression(format:query)
+        let result = expression.expressionValueWithObject(nil, context: nil) as! NSNumber
         
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            let json = JSON(data: data)
-            if json["result"]["success"] == true {
-                
-//                self.view.frame.size.height = 100
-                
-                if let input = json["result"]["input"].string {
-                    self.assumption.stringValue = "Assuming you meant \"\(input)\""
+        if let thing = result as? Int {
+            self.plaintext.stringValue = "\(result)"
+        } else {
+            progress.startAnimation(self)
+            
+            let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+                let json = JSON(data: data)
+                if json["result"]["success"] == true {
+                    
+                    if let input = json["result"]["input"].string {
+                        self.assumption.stringValue = "Assuming you meant \"\(input)\""
+                    }
+                    
+                    if let result = json["result"]["result"]["plaintext"].string {
+                        self.plaintext.stringValue  = result
+                    }
+                    
+                } else {
+                    let url = json["result"]["origin_url"]
+                    self.assumption.stringValue = "Uh oh! I think your query, \"\(self.input.stringValue)\", might be invalid."
+                    self.plaintext.stringValue = "You might have better luck searching it on Wolfram|Alpha: \(url)"
+                    
                 }
-                
-                if let result = json["result"]["result"]["plaintext"].string {
-                    self.plaintext.stringValue  = result
-                }
-                
-            } else {
-                let url = json["result"]["origin_url"]
-                self.assumption.stringValue = "Uh oh! I think your query, \"\(self.input.stringValue)\", might be invalid."
-                self.plaintext.stringValue = "You might have better luck searching it on Wolfram|Alpha: \(url)"
-                
+                self.progress.stopAnimation(self)
             }
-            self.progress.stopAnimation(self)
+            
+            task.resume()
+
         }
         
-        task.resume()
     }
     
 }
