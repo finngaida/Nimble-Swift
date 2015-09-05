@@ -15,8 +15,17 @@ class MenuViewController: NSViewController {
     @IBOutlet weak var assumption: NSTextField!
     @IBOutlet weak var plaintext: NSTextField!
     
-    func showAbout(sender: AnyObject) { println("About test") }
-    func showPreferences(sender: AnyObject) { println("Preferences test") }
+    func showAbout(sender: AnyObject) {
+        println("showing about window")
+        let controller = AboutController(windowNibName: "About")
+        controller.showWindow(controller.aboutWindow)
+    }
+    
+    func showPreferences(sender: AnyObject) {
+        println("showing preferences window")
+        let controller = PreferencesController(windowNibName: "Preferences")
+        controller.showWindow(controller.preferencesWindow)
+    }
     
     @IBAction func showOptions(sender: NSButton) {
         var menu = NSMenu()
