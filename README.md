@@ -21,8 +21,9 @@ I'm slowly chipping away at this in my free time. I'm slow and I apologize.
 - [ ] Make it look good
   - [x] Remove the awful blue border
   - [ ] Make proper use of response space (resize window depending on the length of its contents)
-- [x] Quickly calculate simple maths. Recognise brackets, etc.
+- [ ] Quickly calculate simple maths. Recognise brackets, etc. (In the works)
   - *Could be tough, could be libraries for it, who knows*
+- [ ] Deal with time zone issues (W|A servers don't get user's local time, for example, they get the server's local time)
 
 ## Queries that return unexpected results
 You can help us fix these by comparing your query with our main server, https://nimble-backend.herokuapp.com/input?i=query, and our test server, https://nimble-backend-test.herokuapp.com/input?i=query. [Create an issue](https://github.com/madebybright/Nimble/issues/new) and post the query, along with labeled responses from both servers. This will help us identify the problem.
