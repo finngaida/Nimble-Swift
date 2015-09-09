@@ -24,6 +24,9 @@ I'm slowly chipping away at this in my free time. I'm slow and I apologize.
 - [ ] Quickly calculate simple maths. Recognise brackets, etc. (In the works)
   - *Could be tough, could be libraries for it, who knows*
 - [ ] Deal with time zone issues (W|A servers don't get user's local time, for example, they get the server's local time)
+- [ ] Add preferences to window
+  - [ ] Local Basic Maths
+  - [ ] Open on Login ([Docs Reference](https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLoginItems.html))
 
 ## Queries that return unexpected results
 You can help us fix these by comparing your query with our main server, https://nimble-backend.herokuapp.com/input?i=query, and our test server, https://nimble-backend-test.herokuapp.com/input?i=query. [Create an issue](https://github.com/madebybright/Nimble/issues/new) and post the query, along with labeled responses from both servers. This will help us identify the problem.
