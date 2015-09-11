@@ -12,6 +12,7 @@ class PreferencesController: NSWindowController {
 
     @IBOutlet var preferencesWindow: NSWindow!
     
+    @IBOutlet weak var localMaths: NSButton!
     override func windowDidLoad() {
         super.windowDidLoad()
     

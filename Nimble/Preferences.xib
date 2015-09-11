@@ -6,6 +6,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PreferencesController" customModule="Nimble" customModuleProvider="target">
             <connections>
+                <outlet property="localMaths" destination="gpc-cI-B57" id="NXs-XT-U4Z"/>
                 <outlet property="preferencesWindow" destination="QvC-M9-y7g" id="ug6-jR-n3u"/>
             </connections>
         </customObject>

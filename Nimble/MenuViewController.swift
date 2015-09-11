@@ -14,6 +14,7 @@ class MenuViewController: NSViewController {
     @IBOutlet weak var input: NSTextField!
     @IBOutlet weak var assumption: NSTextField!
     @IBOutlet weak var plaintext: NSTextField!
+    @IBOutlet weak var source: NSTextField!
     
     let aboutController = AboutController(windowNibName: "About")
     let preferencesController = PreferencesController(windowNibName: "Preferences")
@@ -44,6 +45,7 @@ class MenuViewController: NSViewController {
         input.becomeFirstResponder()
         assumption.stringValue = ""
         plaintext.stringValue = ""
+        source.stringValue = ""
     }
     
     func query(sender: NSTextField?) {

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nimble/MenuViewController.swift"
-            timestampString = "463452257.450087"
+            timestampString = "463641882.205348"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "query(_:)"
             landmarkType = "5">
          </BreakpointContent>
