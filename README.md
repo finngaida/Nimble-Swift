@@ -16,6 +16,7 @@ I'm slowly chipping away at this in my free time. I'm slow and I apologize.
 - [ ] Support for looking at different unit conversions for the same result easily
 - [ ] Support for multiple responses (`set` is automatically assumed to be a word, and thus returns the `HistoricalPeriod,Language,Word` interpretation, when it can also refer to "a mathematical definition *or* a class of mathematical terms *or* a given name")
 - [ ] Support for the weird table formatting
+- [ ] Fix About and Preferences windows (Opening once but not opening again after close)
 
 ### For later
 - [ ] Make it look good
