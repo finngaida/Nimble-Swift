@@ -32,7 +32,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func showMenu(sender: AnyObject?) {
         if let button = statusItem.button {
-            popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: NSMinYEdge)
+            popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: NSRectEdge.MinY)
         }
     }
     

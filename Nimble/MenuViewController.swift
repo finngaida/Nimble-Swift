@@ -20,17 +20,17 @@ class MenuViewController: NSViewController {
     let preferencesController = PreferencesController(windowNibName: "Preferences")
     
     func showAbout(sender: AnyObject) {
-        println("showing about window")
+        print("showing about window")
         aboutController.showWindow(aboutController.aboutWindow)
     }
     
     func showPreferences(sender: AnyObject) {
-        println("showing preferences window")
+        print("showing preferences window")
         preferencesController.showWindow(preferencesController.preferencesWindow)
     }
     
     @IBAction func showOptions(sender: NSButton) {
-        var menu = NSMenu()
+        let menu = NSMenu()
         let about = NSMenuItem(title: "About", action: Selector("showAbout:"), keyEquivalent: "")
         let preferences = NSMenuItem(title: "Preferences", action: Selector("showPreferences:"), keyEquivalent: "")
         menu.addItem(about)
