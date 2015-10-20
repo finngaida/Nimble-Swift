@@ -60,7 +60,7 @@ class MenuViewController: NSViewController {
         progress.startAnimation(self)
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            let json = JSON(data: data)
+            let json = JSON(data: data!)
             if json["result"]["success"] == true {
                 
                 if let input = json["result"]["input"].string {
