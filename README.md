@@ -1,7 +1,7 @@
 Nimble
 ======
 
-A Wolfram|Alpha® OS X menu bar app.
+A Wolfram|Alpha® OS X menu bar app, built with Xcode and Swift. For the Electron version with the same name, see [Nimble](https://github.com/madebybright/Nimble).
 
 ## To-do
 
