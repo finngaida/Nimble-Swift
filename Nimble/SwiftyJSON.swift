@@ -117,13 +117,13 @@ public struct JSON {
                 } else {
                     _type = .Number
                 }
-            case let string as NSString:
+            case _ as NSString:
                 _type = .String
-            case let null as NSNull:
+            case _ as NSNull:
                 _type = .Null
-            case let array as [AnyObject]:
+            case _ as [AnyObject]:
                 _type = .Array
-            case let dictionary as [String : AnyObject]:
+            case _ as [String : AnyObject]:
                 _type = .Dictionary
             default:
                 _type = .Unknown
@@ -1337,14 +1337,15 @@ extension JSON {
     @available(*, unavailable, renamed="uInt")
     public var unsignedInteger: Int? {
         get {
-            return self.number?.unsignedIntegerValue
+            guard let int = self.number?.unsignedIntegerValue else {return nil}
+            return Int(int)
         }
     }
     
     @available(*, unavailable, renamed="uIntValue")
     public var unsignedIntegerValue: Int {
         get {
-            return self.numberValue.unsignedIntegerValue
+            return Int(self.numberValue.unsignedIntegerValue)
         }
     }
 }
